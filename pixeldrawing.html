@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Draw your Pixel Art!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container" style="padding-top: 30px;">
+            <div class="row justify-content-start">
+                <div class="col-4">
+                    <div id="pixelcanvas">
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                        <div class="canvasrow">
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                            <div class="pixel" onclick="setPixelColor(this)"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="palette">
+                        <div class="paletterow">
+                            <div class="palette_pixel" style="background-color:white;" onclick="setPenColor('white')"></div>
+                            <div class="palette_pixel" style="background-color:black;" onclick="setPenColor('black')"></div>
+                            <div class="palette_pixel" style="background-color:red;" onclick="setPenColor('red')"></div>
+                        </div>
+                        <div class="paletterow">
+                            <div class="palette_pixel" style="background-color:green;" onclick="setPenColor('green')"></div>
+                            <div class="palette_pixel" style="background-color:blue;" onclick="setPenColor('blue')"></div>
+                            <div class="palette_pixel" style="background-color:purple;" onclick="setPenColor('purple')"></div>
+                        </div>
+                        <div class="paletterow">
+                            <div class="palette_pixel" style="background-color:orange;" onclick="setPenColor('orange')"></div>
+                            <div class="palette_pixel" style="background-color:yellow;" onclick="setPenColor('yellow')"></div>
+                            <div class="palette_pixel" style="background-color:pink;" onclick="setPenColor('pink')"></div>
+                        </div>
+                    </div>
+                    <div style="padding:10px 0px 10px 0px;">
+                        <button type="button" onclick="clearCanvas()">Clear</button>
+                    </div>
+                    <div style="padding:10px 0px 10px 0px;">
+                        <button type="button" onclick="getPixelArray()">Done</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            <script src="" async defer></script>
+    </body>
+</html>
